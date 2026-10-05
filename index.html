@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birudavolu Ruthwik Reddy | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        },
+                        dark: {
+                            bg: '#0a0f1d',
+                            card: '#111827',
+                            border: '#1f293d'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow {
+            box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.3);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 30px -2px rgba(99, 102, 241, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-dark-bg/80 backdrop-blur-md border-b border-dark-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="text-xl font-bold bg-gradient-to-r from-brand-500 to-indigo-300 bg-clip-text text-transparent">
+                    Ruthwik Reddy
+                </a>
+                
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#about" class="hover:text-brand-500 transition-colors">About</a>
+                    <a href="#education" class="hover:text-brand-500 transition-colors">Education</a>
+                    <a href="#skills" class="hover:text-brand-500 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-brand-500 transition-colors">Projects</a>
+                    <a href="#leadership" class="hover:text-brand-500 transition-colors">Leadership</a>
+                    <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
+                </div>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="mailto:ruthwikbirudavolu@gmail.com" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all glow">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-card border-b border-dark-border px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block text-slate-300 hover:text-brand-500 py-2">About</a>
+            <a href="#education" class="block text-slate-300 hover:text-brand-500 py-2">Education</a>
+            <a href="#skills" class="block text-slate-300 hover:text-brand-500 py-2">Skills</a>
+            <a href="#projects" class="block text-slate-300 hover:text-brand-500 py-2">Projects</a>
+            <a href="#leadership" class="block text-slate-300 hover:text-brand-500 py-2">Leadership</a>
+            <a href="#contact" class="block text-slate-300 hover:text-brand-500 py-2">Contact</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- Hero / About Section -->
+        <section id="about" class="pt-8 sm:pt-16">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-2 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-brand-500/10 border border-brand-500/20 text-brand-500 px-3 py-1 rounded-full text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-brand-500 animate-ping"></span>
+                        <span>Seeking Internship Opportunities</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        Hi, I'm <span class="bg-gradient-to-r from-brand-500 to-indigo-300 bg-clip-text text-transparent">Birudavolu Ruthwik Reddy</span>
+                    </h1>
+                    <p class="text-lg text-slate-400 leading-relaxed">
+                        Final-year B.Tech Computer Science & Data Science student with hands-on academic project experience in Python, data validation, and AI tools. Comfortable with documentation, spreadsheets, and cross-functional coordination. Seeking an internship opportunity to contribute, learn, and grow in a professional environment.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="mailto:ruthwikbirudavolu@gmail.com" class="inline-flex items-center space-x-2 bg-brand-600 hover:bg-brand-500 text-white px-5 py-2.5 rounded-lg font-medium transition-all">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Email Me</span>
+                        </a>
+                        <a href="https://linkedin.com/in/ruthwik-b-679645377" target="_blank" class="inline-flex items-center space-x-2 bg-dark-card hover:bg-dark-border text-slate-300 border border-dark-border px-5 py-2.5 rounded-lg font-medium transition-all">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/ruthwikreddy741" target="_blank" class="inline-flex items-center space-x-2 bg-dark-card hover:bg-dark-border text-slate-300 border border-dark-border px-5 py-2.5 rounded-lg font-medium transition-all">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-card border border-dark-border rounded-2xl p-6 glow space-y-4">
+                    <h3 class="text-xs uppercase tracking-wider text-slate-500 font-bold">Quick Contact</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <i class="fa-solid fa-location-dot text-brand-500 w-5"></i>
+                            <span>Hyderabad, Telangana, India</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <i class="fa-solid fa-phone text-brand-500 w-5"></i>
+                            <span>+91 74169 36250</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <i class="fa-solid fa-envelope text-brand-500 w-5"></i>
+                            <span class="truncate">ruthwikbirudavolu@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="space-y-6">
+            <div class="border-l-4 border-brand-500 pl-4">
+                <h2 class="text-2xl font-bold text-white">Education</h2>
+                <p class="text-slate-400 text-sm">Academic background and relevant coursework</p>
+            </div>
+
+            <div class="bg-dark-card border border-dark-border rounded-xl p-6 glow-hover transition-all">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">Bachelor of Technology (B.Tech)</h3>
+                        <p class="text-brand-500 font-medium">Computer Science & Data Science (CSD)</p>
+                    </div>
+                    <div class="text-right md:text-left">
+                        <span class="inline-block bg-dark-border text-slate-300 text-xs px-3 py-1 rounded-full font-mono">Expected 2027</span>
+                    </div>
+                </div>
+                <p class="text-slate-300 text-sm mb-4">
+                    <i class="fa-solid fa-building-columns mr-2 text-slate-500"></i>
+                    Kasireddy Narayanreddy College of Engineering & Research (KNRCER), Hyderabad, India
+                </p>
+                <div>
+                    <h4 class="text-xs uppercase font-bold text-slate-500 tracking-wider mb-2">Key Coursework</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-dark-bg border border-dark-border text-slate-300 text-xs px-3 py-1 rounded-md">Data Science Fundamentals</span>
+                        <span class="bg-dark-bg border border-dark-border text-slate-300 text-xs px-3 py-1 rounded-md">Database Systems</span>
+                        <span class="bg-dark-bg border border-dark-border text-slate-300 text-xs px-3 py-1 rounded-md">Machine Learning Principles</span>
+                        <span class="bg-dark-bg border border-dark-border text-slate-300 text-xs px-3 py-1 rounded-md">Artificial Intelligence Concepts</span>
+                        <span class="bg-dark-bg border border-dark-border text-slate-300 text-xs px-3 py-1 rounded-md">Computer Networks</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="space-y-6">
+            <div class="border-l-4 border-brand-500 pl-4">
+                <h2 class="text-2xl font-bold text-white">Technical Skills</h2>
+                <p class="text-slate-400 text-sm">Tools, languages, and technologies I work with</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Programming -->
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5 space-y-3">
+                    <div class="text-brand-500 text-2xl"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="font-bold text-white">Programming</h3>
+                    <ul class="text-sm text-slate-400 space-y-1">
+                        <li>• Python (Foundational)</li>
+                        <li>• C Language</li>
+                        <li>• HTML</li>
+                    </ul>
+                </div>
+
+                <!-- Productivity -->
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5 space-y-3">
+                    <div class="text-brand-500 text-2xl"><i class="fa-solid fa-file-excel"></i></div>
+                    <h3 class="font-bold text-white">Productivity</h3>
+                    <ul class="text-sm text-slate-400 space-y-1">
+                        <li>• MS Office (Excel, Word, PPT)</li>
+                        <li>• Google Workspace</li>
+                        <li>• Spreadsheets & Documentation</li>
+                    </ul>
+                </div>
+
+                <!-- AI Tools -->
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5 space-y-3">
+                    <div class="text-brand-500 text-2xl"><i class="fa-solid fa-robot"></i></div>
+                    <h3 class="font-bold text-white">AI Tools</h3>
+                    <ul class="text-sm text-slate-400 space-y-1">
+                        <li>• ChatGPT, Gemini, Claude</li>
+                        <li>• Prompt Design</li>
+                        <li>• LLM Output Evaluation</li>
+                    </ul>
+                </div>
+
+                <!-- Project Tools -->
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5 space-y-3">
+                    <div class="text-brand-500 text-2xl"><i class="fa-solid fa-list-check"></i></div>
+                    <h3 class="font-bold text-white">Project Tools</h3>
+                    <ul class="text-sm text-slate-400 space-y-1">
+                        <li>• JIRA</li>
+                        <li>• Workflow Management</li>
+                        <li>• Task Tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="space-y-6">
+            <div class="border-l-4 border-brand-500 pl-4">
+                <h2 class="text-2xl font-bold text-white">Featured Projects</h2>
+                <p class="text-slate-400 text-sm">Hands-on academic and technical work</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-dark-card border border-dark-border rounded-xl p-6 flex flex-col justify-between glow-hover transition-all">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="text-xs font-mono bg-brand-500/10 text-brand-500 border border-brand-500/20 px-2.5 py-1 rounded">Team Project — KNRCER</span>
+                            <i class="fa-solid fa-money-bill-transfer text-slate-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">ATM Simulator (Python)</h3>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                            <li>Co-developed a console-based ATM simulator in Python with a team of 4.</li>
+                            <li>Implemented PIN validation, cash withdrawals, deposits, and balance inquiry.</li>
+                            <li>Built menu-driven transaction logic with balance checks and robust error handling.</li>
+                            <li>Validated transaction flows through structured test cases and project documentation.</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono bg-dark-bg border border-dark-border text-slate-300 px-2.5 py-1 rounded">Python</span>
+                        <span class="text-xs font-mono bg-dark-bg border border-dark-border text-slate-300 px-2.5 py-1 rounded">Validation Logic</span>
+                        <span class="text-xs font-mono bg-dark-bg border border-dark-border text-slate-300 px-2.5 py-1 rounded">Testing</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-dark-card border border-dark-border rounded-xl p-6 flex flex-col justify-between glow-hover transition-all">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="text-xs font-mono bg-brand-500/10 text-brand-500 border border-brand-500/20 px-2.5 py-1 rounded">Academic Project</span>
+                            <i class="fa-solid fa-brain text-slate-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">LLM Output Evaluation & Prompt Analysis</h3>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                            <li>Designed and tested prompts across multiple LLMs (ChatGPT, Gemini, Claude) to assess accuracy, tone, and contextual fit.</li>
+                            <li>Identified hallucinations and edge-case failures across structured evaluation scenarios.</li>
+                            <li>Summarized error patterns into a comprehensive, structured feedback matrix.</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 flex flex-wrap gap-2">
+                        <span class="text-xs font-mono bg-dark-bg border border-dark-border text-slate-300 px-2.5 py-1 rounded">Prompt Engineering</span>
+                        <span class="text-xs font-mono bg-dark-bg border border-dark-border text-slate-300 px-2.5 py-1 rounded">LLMs</span>
+                        <span class="text-xs font-mono bg-dark-bg border border-dark-border text-slate-300 px-2.5 py-1 rounded">QA Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Activities Section -->
+        <section id="leadership" class="space-y-6">
+            <div class="border-l-4 border-brand-500 pl-4">
+                <h2 class="text-2xl font-bold text-white">Leadership & Activities</h2>
+                <p class="text-slate-400 text-sm">Extracurricular responsibilities and management</p>
+            </div>
+
+            <div class="bg-dark-card border border-dark-border rounded-xl p-6 space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Student Coordinator — College Club Activities</h3>
+                        <p class="text-slate-400 text-sm">KNRCER, Hyderabad</p>
+                    </div>
+                    <span class="inline-block bg-brand-500/10 text-brand-500 text-xs px-3 py-1 rounded-full font-medium border border-brand-500/20">Operational Management</span>
+                </div>
+                <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+                    <li>Managed schedules, logistics, and resource allocation for campus events and departmental initiatives.</li>
+                    <li>Facilitated clear operational communication between student committees and faculty leaders.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gradient-to-br from-dark-card to-dark-bg border border-dark-border rounded-2xl p-8 text-center space-y-6 glow">
+            <h2 class="text-3xl font-extrabold text-white">Let's Connect</h2>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm">
+                I'm actively looking for internship opportunities in software engineering, data science, and AI tool evaluations. Feel free to reach out directly!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="mailto:ruthwikbirudavolu@gmail.com" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-3 rounded-lg font-medium transition-all inline-flex items-center space-x-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>ruthwikbirudavolu@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/ruthwik-b-679645377" target="_blank" class="bg-dark-card hover:bg-dark-border border border-dark-border text-slate-200 px-6 py-3 rounded-lg font-medium transition-all inline-flex items-center space-x-2">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-dark-border bg-dark-b
